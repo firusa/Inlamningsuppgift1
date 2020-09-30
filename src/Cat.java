@@ -1,16 +1,15 @@
 import javax.swing.*;
 
 public class Cat extends Animal {
-    public Cat(String name, double weight, String typeOfFood) {
+    public Cat(String name, double weight, TypeOfFood typeOfFood) {
         super(name, weight, typeOfFood);
     }
 
-    public void servingPortion(){
-        double amount= weight/150;
-        JOptionPane.showMessageDialog(null,amount + " grams of cat food");
+    public void servingPortion() {
+        double amount = weight / 150;
+        String message = String.format("%.2f grams of cat food", amount);
+        JOptionPane.showMessageDialog(null, message);
 
-    };
-     public void sayHello(){
-         System.out.println("I am a cat");
-     };
+    }
+
 }

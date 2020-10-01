@@ -7,7 +7,7 @@ public class Dog extends Animal {
     }
 
     public void servingPortion() {
-        double amount = weight / 100;
+        double amount = getWeight()/ 100;
         String message = String.format("%.2f grams of dog food", amount);
         JOptionPane.showMessageDialog(null, message);
     }

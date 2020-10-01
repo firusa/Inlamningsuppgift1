@@ -6,7 +6,7 @@ public class Cat extends Animal {
     }
 
     public void servingPortion() {
-        double amount = weight / 150;
+        double amount = getWeight()/ 150;
         String message = String.format("%.2f grams of cat food", amount);
         JOptionPane.showMessageDialog(null, message);
 

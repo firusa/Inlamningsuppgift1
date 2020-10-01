@@ -25,12 +25,11 @@ public class Main {
         myListOfAnimals.add(cat2);
         myListOfAnimals.add(snake1);
 
-
         List<Animal> objectSearchedFor = new ArrayList<>();//creating another list of found objects
 
         for (Animal a : myListOfAnimals) {                  //go through myLIstofAnimals
 
-            if (userInput.equalsIgnoreCase(a.name)) {       //and if the object in that list has a matching name with user input
+            if (userInput.equalsIgnoreCase(a.getName())) {       //and if the object in that list has a matching name with user input
                 objectSearchedFor.add(a);                      //put it in the list objectSearchedfor
             }
         }
